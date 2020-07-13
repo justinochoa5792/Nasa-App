@@ -15,12 +15,7 @@ class Nasa extends Component {
   }
 
   render() {
-    return (
-      <div>
-        HI
-        <img src={this.state.images.image_src} />
-      </div>
-    );
+    return <div>HI</div>;
   }
 }
 
