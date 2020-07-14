@@ -7,10 +7,30 @@ class Home extends Component {
       <div className="homepage">
         <h1>Nasa App</h1>
         <Link to="/astronomy">
-          <button>Pic of the Day</button>
+          <button
+            style={{
+              margin: "10px",
+              padding: "5px",
+              borderRadius: "10px",
+              backgroundColor: "#eff3c6",
+              color: "black",
+            }}
+          >
+            Pic of the Day
+          </button>
         </Link>
         <Link to="/nasa">
-          <button>Nasa Images</button>
+          <button
+            style={{
+              margin: "10px",
+              padding: "5px",
+              borderRadius: "10px",
+              backgroundColor: "#eff3c6",
+              color: "black",
+            }}
+          >
+            Nasa Images
+          </button>
         </Link>
       </div>
     );

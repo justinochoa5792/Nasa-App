@@ -3,7 +3,9 @@ import { Switch, Route } from "react-router-dom";
 import Home from "./components/Home.jsx";
 import Astronomy from "./components/Astronomy.jsx";
 import Nasa from "./components/Nasa.jsx";
+import Footer from "./components/footer.jsx";
 import Axios from "axios";
+import { Link } from "react-router-dom";
 
 class App extends Component {
   state = {
@@ -20,6 +22,7 @@ class App extends Component {
   render() {
     return (
       <div>
+        <Link to="/">Home</Link>
         <Switch>
           <Route exact path="/" render={(props) => <Home {...props} />} />
           <Route
@@ -29,6 +32,7 @@ class App extends Component {
           />
           <Route exact path="/nasa" render={(props) => <Nasa {...props} />} />
         </Switch>
+        <Footer />
       </div>
     );
   }
