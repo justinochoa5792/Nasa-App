@@ -29,7 +29,7 @@ class Home extends Component {
               color: "black",
             }}
           >
-            Nasa Images
+            Mars Rover Images
           </button>
         </Link>
       </div>

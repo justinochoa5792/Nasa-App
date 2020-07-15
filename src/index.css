@@ -21,6 +21,11 @@
   align-items: center;
   flex-direction: column;
 }
+.nasa {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
 .footer {
   background-color: #eeeeee;
   color: #120136;
