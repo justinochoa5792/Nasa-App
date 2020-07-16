@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Axios from "axios";
+import { Link } from "react-router-dom";
 
 class Nasa extends Component {
   state = {
@@ -16,11 +17,11 @@ class Nasa extends Component {
   showImages = () => {
     return this.state.images.map((eachImage) => {
       return (
-        <ul>
-          <li> Earth Date: {eachImage.earth_date} </li>
+        <ul style={{ listStyle: "none" }}>
+          <li> Rover Name : {eachImage.rover.name} </li>
           <li>Rover Launch Date: {eachImage.rover.launch_date}</li>
           <li>
-            <img src={eachImage.img_src} />
+            <img src={eachImage.img_src} alt={eachImage.id} />
           </li>
         </ul>
       );
@@ -29,9 +30,14 @@ class Nasa extends Component {
 
   render() {
     return (
-      <div className="nasa">
-        Mars Rover Photos
-        {this.showImages()}
+      <div>
+        <Link to="/" style={{ color: "white" }}>
+          Home
+        </Link>
+        <div className="nasa">
+          <h2>Mars Rover Photos</h2>
+          {this.showImages()}
+        </div>
       </div>
     );
   }

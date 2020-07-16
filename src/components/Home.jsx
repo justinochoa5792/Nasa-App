@@ -12,7 +12,7 @@ class Home extends Component {
               margin: "10px",
               padding: "5px",
               borderRadius: "10px",
-              backgroundColor: "#eff3c6",
+              backgroundColor: "white",
               color: "black",
             }}
           >
@@ -25,7 +25,7 @@ class Home extends Component {
               margin: "10px",
               padding: "5px",
               borderRadius: "10px",
-              backgroundColor: "#eff3c6",
+              backgroundColor: "white",
               color: "black",
             }}
           >

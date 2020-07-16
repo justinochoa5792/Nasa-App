@@ -21,8 +21,7 @@ class App extends Component {
   }
   render() {
     return (
-      <div>
-        <Link to="/">Home</Link>
+      <div style={{ backgroundColor: "#120136" }}>
         <Switch>
           <Route exact path="/" render={(props) => <Home {...props} />} />
           <Route

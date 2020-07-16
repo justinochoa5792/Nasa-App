@@ -22,13 +22,16 @@
   flex-direction: column;
 }
 .nasa {
+  background-color: #120136;
+  color: white;
   display: flex;
   align-items: center;
   flex-direction: column;
+  list-style-type: none;
 }
 .footer {
-  background-color: #eeeeee;
-  color: #120136;
+  background-color: #3282b8;
+  color: white;
   font-weight: bold;
   padding: 30px;
   padding-left: 0;

@@ -1,9 +1,13 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 class Astronomy extends Component {
   render() {
     return (
       <div>
+        <Link to="/" style={{ color: "white" }}>
+          Home
+        </Link>
         <div className="apod">
           <h2 style={{ padding: "10px" }}>Astronomy Picture of the day!</h2>
           <h3>{this.props.info.title}</h3>
